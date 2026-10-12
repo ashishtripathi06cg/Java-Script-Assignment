@@ -26,4 +26,4 @@ console.log(items)
 count1 = 0;
 count1++
 count1++
-console.log(count)
+console.log(count1)
