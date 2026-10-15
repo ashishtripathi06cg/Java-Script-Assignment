@@ -19,8 +19,8 @@ console.log(undefined + "5"); //undefined5
 // Question 14:-
 console.log([] + []); // object +object
 console.log([] + {}); // object + object
-console.log({} + []); // 
-console.log({} + {});
+console.log({} + []); // object + object
+console.log({} + {}); // object +object
 
 // Question 15:-
 let a = "10";
