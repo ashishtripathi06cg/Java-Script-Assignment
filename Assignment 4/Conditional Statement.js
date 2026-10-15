@@ -210,6 +210,75 @@ if(height <150){
 }
 
 
+//////////////////////////// part D=> Nested if:-
+// Question 1:-
+let numbers = 15;
 
+if (numbers > 10) {
+    if (numbers % 3 === 0) {
+        console.log(numbers + " is greater than 10 and divisible by 3.");
+    } else {
+        console.log(numbers + " is greater than 10, but NOT divisible by 3.");
+    }
+} else {
+    console.log(numbers + " is not greater than 10.");
+}
 
+// Question 2:-
+let ages = 20;
+let hasVoterID = true;
 
+if (ages >= 18) {
+    if (hasVoterID) {
+        console.log("Can Vote");
+    } else {
+        console.log("Cannot vote: You are 18 or older, but you do not have a voter ID.");
+    }
+} else {
+    console.log("Cannot vote: You must be 18 or older.");
+}
+
+// Question 3:-
+let markss = 85;
+
+if (markss >= 40) {
+    if (markss >= 80) {
+        console.log("Passed with Distinction");
+    } else {
+        console.log("Passed (Marks are 40 or above, but below 80).");
+    }
+} else {
+    console.log("Failed: Scored below 40 marks.");
+}
+
+// Question 4:-
+let correctPIN = 1234;
+let enteredPIN = 1234;
+let accountBalance = 5000;
+let withdrawalAmount = 2000;
+
+if (enteredPIN === correctPIN) {
+    if (accountBalance >= withdrawalAmount) {
+        console.log("Transaction successful! Please collect your cash.");
+    } else {
+        console.log("Transaction failed: Insufficient balance.");
+    }
+} else {
+    console.log("Transaction failed: Incorrect PIN.");
+}
+// Question 5:-
+let years = 2000;
+
+if (years % 4 === 0) {
+    if (years % 100 === 0) {
+        if (years % 400 === 0) {
+            console.log(years + " is a Leap Year.");
+        } else {
+            console.log(years + " is NOT a Leap Year (Divisible by 100 but not by 400).");
+        }
+    } else {
+        console.log(years + " is a Leap Year.");
+    }
+} else {
+    console.log(years + " is NOT a Leap Year (Not divisible by 4).");
+}
