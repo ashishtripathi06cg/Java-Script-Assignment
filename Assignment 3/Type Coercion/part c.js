@@ -72,8 +72,8 @@
 
 // // Question 21:-
 // let a = "5"; //
-// let b = a++; //
-// console.log(a, b, typeof a, typeof b); //
+// let b = a++; // 
+// console.log(a, b, typeof a, typeof b); // 6,5 number number 
 
 // // Question 22:-
 // console.log(typeof (1 + "2")); // string
