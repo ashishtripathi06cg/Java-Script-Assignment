@@ -153,3 +153,63 @@ if(number8>=0){
     console.log("number is negative")
 }
 
+////////////////////////////////// Part C=> if...else if...else:-
+
+//Question 1:-
+let day = "monday";
+if(day == "monday" || day =="Tuesday" || day =="Wednestday" || day == "Thursday" || day == "Friday"){
+    console.log("Weekday");
+}else if(day == "Saturday" || day == "Sunday"){
+    console.log("Weekday")
+}
+
+//Question 2:-
+let income =500000;
+if(income < 300000){
+    console.log("No Tax");
+}else if(income>300000 && income <=700000){
+    console.log("5% Tax")
+}else if(income >700000 && income<=100000){
+    console.log("10% Tax")
+}else{
+    console.log("15% Tax")
+}
+
+//Question 3:-
+let studentScore = 100;
+if(studentScore >=90 && studentScore <=100){
+    console.log("Outstanding")
+}else if(studentScore <=70 && studentScore <=89){
+    console.log("Good")
+}else if(studentScore >=40 && studentScore <=69){
+    console,log("Average")
+}else if(studentScore <=40){
+    console.log("Needs improvement")
+}else{
+    console.log("invalid")
+}
+
+//Question 4:-
+let speed = 50
+if(speed <40){
+    console.log("slow")
+}else if(speed >=40 && speed <=80){
+    console.log("Normal")
+}else if(speed >80){
+    console.log("Fast")
+}
+
+// Question 5:-
+let height =174;
+if(height <150){
+    console.log("short")
+}else if(height >=150 && height <=170){
+    console.log("Average")
+}else if(height >170){
+    console.log("Tall")
+}
+
+
+
+
+
