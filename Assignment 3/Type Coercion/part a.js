@@ -17,3 +17,5 @@ console.log(result4); // Output: true
 // Question 5:-
 let result5 = +"50" * 2;
 console.log(result5); // Output: 100
+
+
