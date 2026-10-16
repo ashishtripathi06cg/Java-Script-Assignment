@@ -282,3 +282,13 @@ if (years % 4 === 0) {
 } else {
     console.log(years + " is NOT a Leap Year (Not divisible by 4).");
 }
+
+
+
+
+
+
+
+//////////////////////////////////////////////// Part (E)  Switch statement:-
+
+// Question 1:-
