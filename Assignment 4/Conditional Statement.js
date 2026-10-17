@@ -292,3 +292,156 @@ if (years % 4 === 0) {
 //////////////////////////////////////////////// Part (E)  Switch statement:-
 
 // Question 1:-
+
+
+// ==========================================
+// SWITCH STATEMENT SOLUTIONS (Using `let`)
+// ==========================================
+
+// --- Question 1 & 2: Days in a Month ---
+let month = 2;
+let days;
+switch (month) {
+  case 1:
+  case 3:
+  case 5:
+  case 7:
+  case 8:
+  case 10:
+  case 12:
+    days = 31;
+    break;
+  case 4:
+  case 6:
+  case 9:
+  case 11:
+    days = 30;
+    break;
+  case 2:
+    days = 28; // 28 for February as simplified
+    break;
+  default:
+    days = "Invalid month number";
+}
+console.log("1. Days in Month:", days);
+
+
+// --- Question 3: Vowel or Consonant ---
+let char = 'e';
+let charResult;
+switch (char.toLowerCase()) {
+  case 'a':
+  case 'e':
+  case 'i':
+  case 'o':
+  case 'u':
+    charResult = "Vowel";
+    break;
+  default:
+    charResult = "Consonant";
+}
+console.log("2. Character Check:", charResult);
+
+
+// --- Question 4, 5 & 6: Seasons (1-2: Winter, 3-4: Summer) ---
+let seasonNum = 3;
+let seasonResult;
+switch (seasonNum) {
+  case 1:
+  case 2:
+    seasonResult = "Winter";
+    break;
+  case 3:
+  case 4:
+    seasonResult = "Summer";
+    break;
+  default:
+    seasonResult = "Invalid number";
+}
+console.log("3. Season:", seasonResult);
+
+
+// --- Question 7 to 12: Class Assignment using switch(true) ---
+let marks = 68;
+let classResult;
+switch (true) {
+  case (marks >= 75):
+    classResult = "Distinction";
+    break;
+  case (marks >= 60):
+    classResult = "1st class";
+    break;
+  case (marks >= 50):
+    classResult = "2nd class";
+    break;
+  case (marks >= 35):
+    classResult = "3rd class";
+    break;
+  default:
+    classResult = "Failed";
+}
+console.log("4. Class for Marks:", classResult);
+
+
+// --- Question 13 to 16: Nested Switch for Roles and Actions ---
+let role = "admin";
+let action = "create";
+let accessResult;
+
+switch (role) {
+  case "admin":
+    switch (action) {
+      case "create":
+        accessResult = "Admin Action: Record Created";
+        break;
+      case "edit":
+        accessResult = "Admin Action: Record Edited";
+        break;
+      case "delete":
+        accessResult = "Admin Action: Record Deleted";
+        break;
+      default:
+        accessResult = "Invalid admin action";
+    }
+    break;
+  case "user":
+    accessResult = "Limited Access";
+    break;
+  default:
+    accessResult = "Invalid role";
+}
+console.log("5. Nested Switch Result:", accessResult);
+
+
+// ==========================================
+// TERNARY OPERATOR SOLUTIONS (Using `let`)
+// ==========================================
+
+// --- Question 1: 
+let num = 49;
+let divisibleResult = (num % 7 === 0) ? "Divisible by 7" : "Not Divisible by 7";
+console.log("1. Divisible by 7:", divisibleResult);
+
+
+// --- Question 3: 
+let temperature = 32;
+let tempResult = (temperature >= 30) ? "Hot Day" : "Pleasant Day";
+console.log("2. Temperature Check:", tempResult);
+
+
+// --- Question 4: 
+let text = "";
+let stringResult = (text === "") ? "Empty String" : "String has content";
+console.log("3. String Check:", stringResult);
+
+
+// --- Question 5: 
+let age = 16;
+let ageResult = (age < 13) ? "Child" : (age <= 19) ? "Teenager" : "Adult";
+console.log("4. Age Group:", ageResult);
+
+
+// --- Question 6: 
+let a = 12, b = 45, c = 30;
+let maxNumber = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+console.log("5. Greatest Number:", maxNumber);
