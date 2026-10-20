@@ -445,3 +445,32 @@
 // let a = 12, b = 45, c = 30;
 // let maxNumber = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
 // console.log("5. Greatest Number:", maxNumber);
+
+// // 7. Student Marks Classification
+// let classifyMarks = (marks) =>
+//   marks >= 75 ? "Distinction" :
+//   marks >= 60 ? "First Class" :
+//   marks >= 50 ? "Second Class" :
+//   marks >= 35 ? "Pass" : "Fail";
+
+// // 8. Number Sign and Parity Classification
+// let classifyNumber = (num) =>
+//   num === 0 ? "Zero" :
+//   num > 0 ? (num % 2 === 0 ? "Positive Even" : "Positive Odd") :
+//   (num % 2 === 0 ? "Negative Even" : "Negative Odd");
+
+// // 9. Full Leap Year Logic
+// let checkLeapYear = (year) =>
+//   year % 4 === 0 
+//     ? (year % 100 === 0 
+//         ? (year % 400 === 0 ? "Leap Year" : "Not a Leap Year") 
+//         : "Leap Year") 
+//     : "Not a Leap Year";
+
+// // 10. Decision Tree Conversion
+// let getAccess = (role, action) =>
+//   role === "admin" 
+//     ? (action === "delete" ? "Admin Delete" : action === "edit" ? "Admin Edit" : "Admin Other") 
+//     : (role === "user" 
+//         ? (action === "view" ? "User View" : "User Restricted") 
+//         : "Invalid Role");
