@@ -96,6 +96,10 @@
 //  console.log(`Hot days: {h}`);
 
 
+// Question1
+practice
+
+
 
 
 
